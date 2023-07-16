@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Useeffecthook from './useEffectHook';
+import Useeffecthook from './useRefHook';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
