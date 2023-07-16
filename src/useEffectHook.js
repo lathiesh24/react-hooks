@@ -7,8 +7,9 @@ const useEffectHook = () => {
     useEffect(() => {
        axios.get("https://jsonplaceholder.typicode.com/comments").then((response)=>{
           setdata(response.data[0].email);
+          console.log("Comment")
        })
-    }, [data])
+    }, [])
     
   return (
     <div>useEffectHook {data}</div>
