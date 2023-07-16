@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Button = () => {
+    const [toggle, settoggle] = useState(false);
   return (
-    <button>Button from child</button>
+    <>
+     <button
+    onClick={()=>{
+        settoggle(!toggle);
+    }}>Button from child</button>
+    {toggle && <span>Toggle</span>}</>
   )
 }
 
